@@ -21,8 +21,8 @@ A Python-based Command Line Interface (CLI) for managing AWS resources (S3, EC2,
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
-    cd <your-repo-folder>
+    git clone https://github.com/RomankDevOps/DevOps-Project---Platform-Engineering-CLI-Tool.git
+    cd DevOps-Project---Platform-Engineering-CLI-Tool
     ```
 
 2.  **Install dependencies:**
@@ -81,4 +81,5 @@ python main.py r53 record --zone-id <ID> --name <full-domain> --type <A|CNAME> -
 If you encounter `NoCredentialsError` or `InvalidClientTokenId` when running the CLI, you can run the included diagnostic script:
 
 ```bash
+
 python check_setup.py
