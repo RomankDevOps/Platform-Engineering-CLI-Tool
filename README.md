@@ -57,7 +57,7 @@ python main.py s3 upload <bucket-name> <file-path>
 ```
 ### 2. EC2 (Compute)
 ```bash
-# Launch an instance (Enforces limit of 2)
+# Launch instance (Max limit: 2) | OS choices: amazon-linux, ubuntu
 python main.py ec2 create --type t3.micro --os amazon-linux
 
 # List your instances
@@ -84,6 +84,7 @@ If you encounter `NoCredentialsError` or `InvalidClientTokenId` when running the
 ```bash
 
 python check_setup.py
+
 
 
 
