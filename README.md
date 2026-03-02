@@ -68,13 +68,13 @@ python main.py ec2 stop <instance-id>
 ### 3. Route53 (DNS)
 ```bash
 # Create a Hosted Zone
-python main.py r53 create <domain-name>
+python main.py route53 create <domain-name>
 
 # List your zones
-python main.py r53 list
+python main.py route53 list
 
 # Manage Records (Create/Update/Delete)
-python main.py r53 record --zone-id <ID> --name <full-domain> --type <A|CNAME> --value <IP|Target> --action UPSERT
+python main.py route53 record --zone-id <ID> --name <full-domain> --type <A|CNAME> --value <IP|Target> --action UPSERT
 ```
 ## Troubleshooting
 
@@ -83,3 +83,4 @@ If you encounter `NoCredentialsError` or `InvalidClientTokenId` when running the
 ```bash
 
 python check_setup.py
+
