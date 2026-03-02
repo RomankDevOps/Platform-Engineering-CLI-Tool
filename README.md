@@ -38,6 +38,7 @@ A Python-based Command Line Interface (CLI) for managing AWS resources (S3, EC2,
     aws_secret_access_key = YOUR_SECRET_KEY
     # aws_session_token = YOUR_TOKEN (Only if using Student Labs)
     ```
+Alternatively : You can attach a role to your EC2 instance that has the necessary permissions (e.g., AdministratorAccess, or a custom role with EC2, S3, and Route53 permissions). boto3 is smart enough to automatically detect and use the IAM Role attached to the instance without needing any credentials file.
 
 ## Usage
 
@@ -83,4 +84,5 @@ If you encounter `NoCredentialsError` or `InvalidClientTokenId` when running the
 ```bash
 
 python check_setup.py
+
 
